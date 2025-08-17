@@ -1,6 +1,6 @@
 {
-  "name": "@rainbow-me/rainbowkit",
-  "version": "2.2.8",
+  "name": "rainbowkit-with-nonce",
+  "version": "0.0.1",
   "description": "The best way to connect a wallet",
   "files": [
     "dist",
@@ -39,7 +39,7 @@
     "hooks",
     "blockchain"
   ],
-  "author": "Rainbow",
+  "author": "furisake",
   "license": "MIT",
   "peerDependencies": {
     "@tanstack/react-query": ">=5.0.0",
@@ -75,7 +75,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rainbow-me/rainbowkit.git",
+    "url": "git+https://github.com/furisake/rainbowkit-with-nonce.git",
     "directory": "packages/rainbowkit"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "rainbowkit",
+  "name": "rainbowkit-with-nonce",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rainbow-me/rainbowkit.git"
+    "url": "git+https://github.com/furisake/rainbowkit-with-nonce.git"
   },
   "license": "MIT",
   "devDependencies": {

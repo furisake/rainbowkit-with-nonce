@@ -6,7 +6,7 @@
   "main": "index.js",
   "dependencies": {
     "@rainbow-me/rainbow-button": "workspace:*",
-    "@rainbow-me/rainbowkit": "workspace:*",
+    "rainbowkit-with-nonce": "workspace:*",
     "@rainbow-me/rainbowkit-siwe-next-auth": "workspace:*",
     "@tanstack/react-query": "^5.55.3",
     "next": "^15.3.3",

@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "workspace:*",
+    "rainbowkit-with-nonce": "workspace:*",
     "next": "^15.3.3",
     "next-intl": "^3.26.3",
     "react": "^19.1.0",

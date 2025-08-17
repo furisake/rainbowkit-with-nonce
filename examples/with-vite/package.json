@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "workspace:*",
+    "rainbowkit-with-nonce": "workspace:*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "viem": "2.29.2",

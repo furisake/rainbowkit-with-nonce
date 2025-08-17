@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "workspace:*",
+    "rainbowkit-with-nonce": "workspace:*",
     "@tanstack/react-query": "^5.55.3",
     "next": "^15.3.3",
     "react": "^19.1.0",

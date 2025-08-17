@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@rainbow-me/rainbowkit": "workspace:*",
+    "rainbowkit-with-nonce": "workspace:*",
     "@rainbow-me/rainbowkit-siwe-next-auth": "workspace:*",
     "next": "^15.3.3",
     "next-auth": "4.24.11",

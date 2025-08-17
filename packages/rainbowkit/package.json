@@ -1,7 +1,7 @@
 {
   "name": "rainbowkit-with-nonce",
   "version": "0.0.1",
-  "description": "The best way to connect a wallet",
+  "description": "RainbowKit fork adding nonce to style tags for CSP.",
   "files": [
     "dist",
     "styles.css",

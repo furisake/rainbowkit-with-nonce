@@ -1,85 +1,19 @@
-<a href="https://rainbowkit.com">
-  <img alt="rainbowkit" src="https://user-images.githubusercontent.com/372831/168174718-685980e0-391e-4621-94a1-29bf83979fa5.png" />
-</a>
+# Rainbowkit With Nonce
+RainbowKit fork adding nonce to style tags for CSP.
 
-# RainbowKit &nbsp; [![Version](https://img.shields.io/npm/v/@rainbow-me/rainbowkit?colorA=1f2937&colorB=3b82f6&labelColor=1f2937)](https://www.npmjs.com/package/@rainbow-me/rainbowkit) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/rainbow-me/rainbowkit)
+## Overview
 
-**The best way to connect a wallet 🌈**
+This project is a fork of [Rainbowkit](https://github.com/rainbow-me/rainbow) and adds the feature of inserting nonces into style tags for CSP.  
+The changes are minimal and easy to sync.
 
-RainbowKit is a [React](https://reactjs.org/) library that makes it easy to add wallet connection to your dapp.
+## Getting Started
 
-- 🔥 Out-of-the-box wallet management
-- ✅ Easily customizable
-- 🦄 Built on top of [wagmi](https://wagmi.sh) and [viem](https://viem.sh)
-
-## Quick start
-
-You can scaffold a new RainbowKit + [wagmi](https://wagmi.sh) + [Next.js](https://nextjs.org) app with one of the following commands, using your package manager of choice:
-
-```bash
-npm init @rainbow-me/rainbowkit@latest
-# or
-pnpm create @rainbow-me/rainbowkit@latest
-# or
-yarn create @rainbow-me/rainbowkit
-```
-
-## Documentation
-
-For full documentation, visit [rainbowkit.com](https://rainbowkit.com).
-
-### Try it out
-
-You can use the CodeSandbox links below to try out RainbowKit:
-
-- with [Create React App](https://codesandbox.io/p/sandbox/github/rainbow-me/rainbowkit/tree/main/examples/with-create-react-app)
-- with [Next.js](https://codesandbox.io/p/sandbox/github/rainbow-me/rainbowkit/tree/main/examples/with-next)
-- with [Next.js App Router](https://codesandbox.io/p/sandbox/github/rainbow-me/rainbowkit/tree/main/examples/with-next-app)
-- with [Remix](https://codesandbox.io/p/sandbox/github/rainbow-me/rainbowkit/tree/main/examples/with-remix)
-- with [Vite](https://codesandbox.io/p/sandbox/github/rainbow-me/rainbowkit/tree/main/examples/with-vite)
-- with [React Router](https://codesandbox.io/p/sandbox/github/rainbow-me/rainbowkit/tree/main/examples/with-react-router)
-
-## Examples
-
-The following examples are provided in the [examples](./examples/) folder of this repo.
-
-- `with-create-react-app`
-- `with-next`
-- `with-next-app`
-- `with-next-custom-button`
-- `with-next-mint-nft`
-- `with-next-siwe-next-auth`
-- `with-next-siwe-iron-session`
-- `with-remix`
-- `with-vite`
-- `with-react-router`
-
-### Running examples
-
-To run an example locally, install dependencies.
-
-```bash
-pnpm install
-```
-
-Then go into an example directory, eg: `with-next`.
-
-```bash
-cd examples/with-next
-```
-
-Then run the dev script.
-
-```bash
-pnpm run dev
-```
-
-## Contributing
-
-Please follow our [contributing guidelines](/.github/CONTRIBUTING.md).
+TBD
 
 ## License
 
-Licensed under the MIT License, Copyright © 2022-present [Rainbow](https://rainbow.me).
+Licensed under the MIT License, 
+Copyright © 2022-present [Rainbow](https://rainbow.me).
+Copyright © 2025-present [Furisake](https://github.com/furisake).
 
 See [LICENSE](/LICENSE) for more information.

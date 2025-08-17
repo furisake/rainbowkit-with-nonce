@@ -54,9 +54,9 @@ export const useThemeRootProps = () => {
 export type Theme =
   | ThemeVars
   | {
-      lightMode: ThemeVars;
-      darkMode: ThemeVars;
-    };
+    lightMode: ThemeVars;
+    darkMode: ThemeVars;
+  };
 
 export interface RainbowKitProviderProps {
   initialChain?: Chain | number;
@@ -125,7 +125,7 @@ export function RainbowKitProvider({
                     <AppContext.Provider value={appContext}>
                       <ThemeIdContext.Provider value={id}>
                         <ShowBalanceProvider>
-                          <ModalProvider>
+                          <ModalProvider nonce={nonce}>
                             {theme ? (
                               <div {...createThemeRootProps(id)}>
                                 <style
@@ -145,9 +145,9 @@ export function RainbowKitProvider({
 
                                       'darkMode' in theme
                                         ? `@media(prefers-color-scheme:dark){${selector}{${cssStringFromTheme(
-                                            theme.darkMode,
-                                            { extends: theme.lightMode },
-                                          )}}}`
+                                          theme.darkMode,
+                                          { extends: theme.lightMode },
+                                        )}}}`
                                         : null,
                                     ].join(''),
                                   }}

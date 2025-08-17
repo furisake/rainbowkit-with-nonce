@@ -12,6 +12,7 @@ import { Box } from '../Box/Box';
 import { useThemeRootProps } from '../RainbowKitProvider/RainbowKitProvider';
 import * as styles from './Dialog.css';
 import { FocusTrap } from './FocusTrap';
+import { setNonce } from 'get-nonce';
 
 const stopPropagation: MouseEventHandler<unknown> = (event) =>
   event.stopPropagation();
@@ -22,9 +23,10 @@ interface DialogProps {
   titleId: string;
   onMountAutoFocus?: (event: Event) => void;
   children: ReactNode;
+  nonce?: string;
 }
 
-export function Dialog({ children, onClose, open, titleId }: DialogProps) {
+export function Dialog({ children, onClose, open, titleId, nonce }: DialogProps) {
   useEffect(() => {
     const handleEscape = (event: KeyboardEvent) =>
       open && event.key === 'Escape' && onClose();
@@ -45,34 +47,40 @@ export function Dialog({ children, onClose, open, titleId }: DialogProps) {
   const themeRootProps = useThemeRootProps();
   const mobile = isMobile();
 
+  // To add nonce to `RemoveScroll`
+  // See: https://github.com/theKashey/react-remove-scroll/issues/21
+  if (nonce) {
+    setNonce(nonce);
+  }
+
   return (
     <>
       {open
         ? createPortal(
-            <RemoveScroll enabled={bodyScrollable}>
-              <Box {...themeRootProps}>
-                <Box
-                  {...themeRootProps}
-                  alignItems={mobile ? 'flex-end' : 'center'}
-                  aria-labelledby={titleId}
-                  aria-modal
-                  className={styles.overlay}
-                  onClick={handleBackdropClick}
-                  position="fixed"
-                  role="dialog"
+          <RemoveScroll enabled={bodyScrollable}>
+            <Box {...themeRootProps}>
+              <Box
+                {...themeRootProps}
+                alignItems={mobile ? 'flex-end' : 'center'}
+                aria-labelledby={titleId}
+                aria-modal
+                className={styles.overlay}
+                onClick={handleBackdropClick}
+                position="fixed"
+                role="dialog"
+              >
+                <FocusTrap
+                  className={styles.content}
+                  onClick={stopPropagation}
+                  role="document"
                 >
-                  <FocusTrap
-                    className={styles.content}
-                    onClick={stopPropagation}
-                    role="document"
-                  >
-                    {children}
-                  </FocusTrap>
-                </Box>
+                  {children}
+                </FocusTrap>
               </Box>
-            </RemoveScroll>,
-            document.body,
-          )
+            </Box>
+          </RemoveScroll>,
+          document.body,
+        )
         : null}
     </>
   );

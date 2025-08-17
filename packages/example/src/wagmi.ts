@@ -1,4 +1,4 @@
-import { type Chain, getDefaultConfig } from '@rainbow-me/rainbowkit';
+import { type Chain, getDefaultConfig } from 'rainbowkit-with-nonce';
 import {
   argentWallet,
   backpackWallet,
@@ -63,7 +63,7 @@ import {
   zealWallet,
   zerionWallet,
   zilPayWallet,
-} from '@rainbow-me/rainbowkit/wallets';
+} from 'rainbowkit-with-nonce/wallets';
 import { publicActions } from 'viem';
 import {
   apeChain,
@@ -160,23 +160,23 @@ export const config = getDefaultConfig({
     zksync,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true'
       ? [
-          sepolia,
-          holesky,
-          arbitrumSepolia,
-          avalancheFuji,
-          baseSepolia,
-          berachainTestnetbArtio,
-          blastSepolia,
-          bscTestnet,
-          curtis,
-          inkSepolia,
-          lineaSepolia,
-          optimismSepolia,
-          polygonMumbai,
-          scrollSepolia,
-          unichainSepolia,
-          zoraSepolia,
-        ]
+        sepolia,
+        holesky,
+        arbitrumSepolia,
+        avalancheFuji,
+        baseSepolia,
+        berachainTestnetbArtio,
+        blastSepolia,
+        bscTestnet,
+        curtis,
+        inkSepolia,
+        lineaSepolia,
+        optimismSepolia,
+        polygonMumbai,
+        scrollSepolia,
+        unichainSepolia,
+        zoraSepolia,
+      ]
       : []),
   ],
   wallets: [

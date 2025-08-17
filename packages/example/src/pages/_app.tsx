@@ -16,7 +16,7 @@ import {
   darkTheme,
   lightTheme,
   midnightTheme,
-} from '@rainbow-me/rainbowkit';
+} from 'rainbowkit-with-nonce';
 import {
   type GetSiweMessageOptions,
   RainbowKitSiweNextAuthProvider,

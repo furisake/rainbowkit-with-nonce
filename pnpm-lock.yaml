@@ -121,7 +121,7 @@ importers:
         version: 29.5.12
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
       react-scripts:
         specifier: 5.0.1
         version: 5.0.1(@babel/plugin-syntax-flow@7.24.7(@babel/core@7.25.2))(@babel/plugin-transform-react-jsx@7.25.2(@babel/core@7.25.2))(@types/babel__core@7.20.5)(bufferutil@4.0.8)(esbuild@0.25.5)(eslint@8.57.0)(react@19.1.0)(type-fest@4.26.1)(typescript@5.5.4)(utf-8-validate@5.0.10)
@@ -133,13 +133,13 @@ importers:
     dependencies:
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
 
   examples/with-next-app:
     dependencies:
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
 
   examples/with-next-app-i18n:
     dependencies:
@@ -148,13 +148,13 @@ importers:
         version: 3.26.3(next@15.3.3(@babel/core@7.25.2)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
 
   examples/with-next-custom-button:
     dependencies:
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
 
   examples/with-next-mint-nft:
     dependencies:
@@ -163,7 +163,7 @@ importers:
         version: 11.15.0(@emotion/is-prop-valid@0.8.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
     devDependencies:
       '@wagmi/cli':
         specifier: ^2.2.1
@@ -182,7 +182,7 @@ importers:
         version: 6.3.1(express@4.21.2)(next@15.3.3(@babel/core@7.25.2)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
 
   examples/with-next-siwe-next-auth:
     dependencies:
@@ -191,13 +191,13 @@ importers:
         version: link:../../packages/rainbowkit-siwe-next-auth
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
 
   examples/with-next-wallet-button:
     dependencies:
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
 
   examples/with-react-router:
     dependencies:
@@ -212,7 +212,7 @@ importers:
         version: 5.1.25
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
       react-router:
         specifier: ^7.6.2
         version: 7.6.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -246,7 +246,7 @@ importers:
         version: 2.16.8(typescript@5.5.4)
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
     devDependencies:
       '@remix-run/dev':
         specifier: ^2.16.8
@@ -256,7 +256,7 @@ importers:
     dependencies:
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../packages/rainbowkit
+        version: link:../..
     devDependencies:
       '@vitejs/plugin-react':
         specifier: ^4.5.2
@@ -306,7 +306,7 @@ importers:
         version: 15.3.3(@babel/core@7.25.2)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../rainbowkit
+        version: link:../../..
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -343,7 +343,7 @@ importers:
         version: 15.3.3(@babel/core@7.25.2)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../../../rainbowkit
+        version: link:../../../..
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -389,7 +389,7 @@ importers:
         version: 4.24.11(next@15.3.3(@babel/core@7.25.2)(@opentelemetry/api@1.9.0)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../rainbowkit
+        version: link:../..
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -407,7 +407,7 @@ importers:
     dependencies:
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../rainbowkit
+        version: link:../..
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -423,6 +423,9 @@ importers:
 
   packages/rainbowkit:
     dependencies:
+      '@rainbow-me/rainbowkit':
+        specifier: ^2.2.8
+        version: 2.2.8(@tanstack/react-query@5.59.0(react@19.1.0))(@types/react@19.1.8)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.5.4)(viem@2.29.2(bufferutil@4.0.8)(typescript@5.5.4)(utf-8-validate@5.0.10)(zod@3.23.8))(wagmi@2.15.6(@tanstack/query-core@5.59.0)(@tanstack/react-query@5.59.0(react@19.1.0))(@types/react@19.1.8)(bufferutil@4.0.8)(encoding@0.1.13)(immer@9.0.21)(react@19.1.0)(typescript@5.5.4)(utf-8-validate@5.0.10)(viem@2.29.2(bufferutil@4.0.8)(typescript@5.5.4)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8))
       '@tanstack/react-query':
         specifier: '>=5.0.0'
         version: 5.59.0(react@19.1.0)
@@ -514,7 +517,7 @@ importers:
     devDependencies:
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../rainbowkit
+        version: link:../..
 
   site:
     dependencies:
@@ -592,7 +595,7 @@ importers:
         version: 1.3.0
       rainbowkit-with-nonce:
         specifier: workspace:*
-        version: link:../packages/rainbowkit
+        version: link:..
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -3617,6 +3620,16 @@ packages:
 
   '@radix-ui/rect@1.1.0':
     resolution: {integrity: sha512-A9+lCBZoaMJlVKcRBz2YByCG+Cp2t6nAnMnNba+XiWxnj6r4JUFqfsgwocMBZU9LPtdxC6wB56ySYpc7LQIoJg==}
+
+  '@rainbow-me/rainbowkit@2.2.8':
+    resolution: {integrity: sha512-EdNIK2cdAT6GJ9G11wx7nCVfjqBfxh7dx/1DhPYrB+yg+VFrII6cM1PiMFVC9evD4mqVHe9mmLAt3nvlwDdiPQ==}
+    engines: {node: '>=12.4'}
+    peerDependencies:
+      '@tanstack/react-query': '>=5.0.0'
+      react: ^19.1.0
+      react-dom: ^19.1.0
+      viem: 2.x
+      wagmi: ^2.9.0
 
   '@react-router/dev@7.6.2':
     resolution: {integrity: sha512-BuG83Ug2C/P+zMYErTz/KKuXoxbOefh3oR66r13XWG9txwooC9nt2QDt2u8yt7Eo/9BATnx+TmXnOHEWqMyB8w==}
@@ -15941,6 +15954,25 @@ snapshots:
       '@types/react': 19.1.8
 
   '@radix-ui/rect@1.1.0': {}
+
+  '@rainbow-me/rainbowkit@2.2.8(@tanstack/react-query@5.59.0(react@19.1.0))(@types/react@19.1.8)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.5.4)(viem@2.29.2(bufferutil@4.0.8)(typescript@5.5.4)(utf-8-validate@5.0.10)(zod@3.23.8))(wagmi@2.15.6(@tanstack/query-core@5.59.0)(@tanstack/react-query@5.59.0(react@19.1.0))(@types/react@19.1.8)(bufferutil@4.0.8)(encoding@0.1.13)(immer@9.0.21)(react@19.1.0)(typescript@5.5.4)(utf-8-validate@5.0.10)(viem@2.29.2(bufferutil@4.0.8)(typescript@5.5.4)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8))':
+    dependencies:
+      '@tanstack/react-query': 5.59.0(react@19.1.0)
+      '@vanilla-extract/css': 1.17.3(babel-plugin-macros@3.1.0)
+      '@vanilla-extract/dynamic': 2.1.4
+      '@vanilla-extract/sprinkles': 1.6.4(@vanilla-extract/css@1.17.3(babel-plugin-macros@3.1.0))
+      clsx: 2.1.1
+      cuer: 0.0.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(typescript@5.5.4)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      react-remove-scroll: 2.6.2(@types/react@19.1.8)(react@19.1.0)
+      ua-parser-js: 1.0.38
+      viem: 2.29.2(bufferutil@4.0.8)(typescript@5.5.4)(utf-8-validate@5.0.10)(zod@3.23.8)
+      wagmi: 2.15.6(@tanstack/query-core@5.59.0)(@tanstack/react-query@5.59.0(react@19.1.0))(@types/react@19.1.8)(bufferutil@4.0.8)(encoding@0.1.13)(immer@9.0.21)(react@19.1.0)(typescript@5.5.4)(utf-8-validate@5.0.10)(viem@2.29.2(bufferutil@4.0.8)(typescript@5.5.4)(utf-8-validate@5.0.10)(zod@3.23.8))(zod@3.23.8)
+    transitivePeerDependencies:
+      - '@types/react'
+      - babel-plugin-macros
+      - typescript
 
   '@react-router/dev@7.6.2(@react-router/serve@7.6.2(react-router@7.6.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.5.4))(@types/node@20.16.5)(babel-plugin-macros@3.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@7.6.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(terser@5.32.0)(typescript@5.5.4)(vite@6.3.5(@types/node@20.16.5)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.32.0)(yaml@2.5.1))(yaml@2.5.1)':
     dependencies:

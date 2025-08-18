@@ -1,4 +1,4 @@
-import '@rainbow-me/rainbowkit/styles.css';
+import 'rainbowkit-with-nonce/styles.css';
 import './global.css';
 
 import type { Session } from 'next-auth';
@@ -171,6 +171,7 @@ function RainbowKitApp({
           fontStack: selectedFontStack,
           overlayBlur: selectedOverlayBlur,
         })}
+        nonce="dummy-nonce-for-csp"
       >
         <div
           style={{
